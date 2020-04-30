@@ -1,0 +1,23 @@
+/* Domain & Subdomain Definitions */
+Domain InsuranceDomain {
+	Subdomain CustomerManagementDomain {
+		type = CORE_DOMAIN
+		domainVisionStatement = "Subdomain managing everything customer-related."
+	}
+	Subdomain PolicyManagementDomain {
+		type = CORE_DOMAIN
+		domainVisionStatement = "Subdomain managing contracts and policies."
+	}
+	Subdomain PrintingDomain {
+		type = SUPPORTING_DOMAIN
+		domainVisionStatement = "Service (external system) to solve printing for all kinds of documents (debts, policies, etc.)"
+	}
+	Subdomain RiskManagementDomain {
+		type = GENERIC_SUBDOMAIN
+		domainVisionStatement = "Subdomain supporting everything which relates to risk management."
+	}
+	Subdomain DebtsDomain {
+		type = GENERIC_SUBDOMAIN
+		domainVisionStatement = "Subomain including everything related to the incoming money (debts, dunning, etc.)"
+	}
+}
